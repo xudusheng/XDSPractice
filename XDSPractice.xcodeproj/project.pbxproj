@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094D75271C05A14800B510F3 /* libSmtaranSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D751F1C05A14800B510F3 /* libSmtaranSDK.a */; };
+		094D75281C05A14800B510F3 /* SmtaranSplashAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 094D75261C05A14800B510F3 /* SmtaranSplashAd.m */; };
+		094D752A1C05A2A500B510F3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D75291C05A2A500B510F3 /* CoreLocation.framework */; };
+		094D752C1C05A2AA00B510F3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D752B1C05A2AA00B510F3 /* CoreTelephony.framework */; };
+		094D752E1C05A2B100B510F3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D752D1C05A2B100B510F3 /* AdSupport.framework */; };
+		094D75301C05A2BC00B510F3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D752F1C05A2BC00B510F3 /* StoreKit.framework */; };
+		094D75321C05A2C400B510F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D75311C05A2C400B510F3 /* SystemConfiguration.framework */; };
+		094D75341C05A2C900B510F3 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D75331C05A2C900B510F3 /* JavaScriptCore.framework */; };
+		094D75371C05A39F00B510F3 /* SmtaranADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094D75361C05A39F00B510F3 /* SmtaranADViewController.m */; };
 		095865F41BFC103B00FBAF7F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 095865F31BFC103B00FBAF7F /* libsqlite3.tbd */; };
 		095865FC1BFC128100FBAF7F /* XDSPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095865FB1BFC128100FBAF7F /* XDSPhotoBrowserViewController.m */; };
 		09CB43D71B7190D60069FF29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB43D61B7190D60069FF29 /* main.m */; };
@@ -38,6 +47,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		094D751E1C05A14800B510F3 /* FWBaseDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWBaseDownload.h; sourceTree = "<group>"; };
+		094D751F1C05A14800B510F3 /* libSmtaranSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmtaranSDK.a; sourceTree = "<group>"; };
+		094D75201C05A14800B510F3 /* SmtaranBannerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmtaranBannerAd.h; sourceTree = "<group>"; };
+		094D75211C05A14800B510F3 /* SmtaranFactoryAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmtaranFactoryAd.h; sourceTree = "<group>"; };
+		094D75221C05A14800B510F3 /* SmtaranInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmtaranInterstitialAd.h; sourceTree = "<group>"; };
+		094D75231C05A14800B510F3 /* SmtaranNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmtaranNativeAd.h; sourceTree = "<group>"; };
+		094D75241C05A14800B510F3 /* SmtaranSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmtaranSDKManager.h; sourceTree = "<group>"; };
+		094D75251C05A14800B510F3 /* SmtaranSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmtaranSplashAd.h; sourceTree = "<group>"; };
+		094D75261C05A14800B510F3 /* SmtaranSplashAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmtaranSplashAd.m; sourceTree = "<group>"; };
+		094D75291C05A2A500B510F3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		094D752B1C05A2AA00B510F3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		094D752D1C05A2B100B510F3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		094D752F1C05A2BC00B510F3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		094D75311C05A2C400B510F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		094D75331C05A2C900B510F3 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		094D75351C05A39F00B510F3 /* SmtaranADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmtaranADViewController.h; sourceTree = "<group>"; };
+		094D75361C05A39F00B510F3 /* SmtaranADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmtaranADViewController.m; sourceTree = "<group>"; };
 		095865F31BFC103B00FBAF7F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		095865FA1BFC128100FBAF7F /* XDSPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSPhotoBrowserViewController.h; sourceTree = "<group>"; };
 		095865FB1BFC128100FBAF7F /* XDSPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSPhotoBrowserViewController.m; sourceTree = "<group>"; };
@@ -80,8 +106,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094D75341C05A2C900B510F3 /* JavaScriptCore.framework in Frameworks */,
+				094D75321C05A2C400B510F3 /* SystemConfiguration.framework in Frameworks */,
+				094D75301C05A2BC00B510F3 /* StoreKit.framework in Frameworks */,
+				094D752E1C05A2B100B510F3 /* AdSupport.framework in Frameworks */,
+				094D752C1C05A2AA00B510F3 /* CoreTelephony.framework in Frameworks */,
+				094D752A1C05A2A500B510F3 /* CoreLocation.framework in Frameworks */,
 				095865F41BFC103B00FBAF7F /* libsqlite3.tbd in Frameworks */,
 				4B030896329745C5EBD53D02 /* libPods.a in Frameworks */,
+				094D75271C05A14800B510F3 /* libSmtaranSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +128,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094D751C1C05A05200B510F3 /* SmtaranAD */ = {
+			isa = PBXGroup;
+			children = (
+				094D751D1C05A14800B510F3 /* SmtaranSDK */,
+				094D75351C05A39F00B510F3 /* SmtaranADViewController.h */,
+				094D75361C05A39F00B510F3 /* SmtaranADViewController.m */,
+			);
+			path = SmtaranAD;
+			sourceTree = "<group>";
+		};
+		094D751D1C05A14800B510F3 /* SmtaranSDK */ = {
+			isa = PBXGroup;
+			children = (
+				094D751E1C05A14800B510F3 /* FWBaseDownload.h */,
+				094D751F1C05A14800B510F3 /* libSmtaranSDK.a */,
+				094D75201C05A14800B510F3 /* SmtaranBannerAd.h */,
+				094D75211C05A14800B510F3 /* SmtaranFactoryAd.h */,
+				094D75221C05A14800B510F3 /* SmtaranInterstitialAd.h */,
+				094D75231C05A14800B510F3 /* SmtaranNativeAd.h */,
+				094D75241C05A14800B510F3 /* SmtaranSDKManager.h */,
+				094D75251C05A14800B510F3 /* SmtaranSplashAd.h */,
+				094D75261C05A14800B510F3 /* SmtaranSplashAd.m */,
+			);
+			path = SmtaranSDK;
+			sourceTree = "<group>";
+		};
 		095865F61BFC123900FBAF7F /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +191,7 @@
 				09CB43D91B7190D60069FF29 /* AppDelegate.m */,
 				09CB43DB1B7190D60069FF29 /* ViewController.h */,
 				09CB43DC1B7190D60069FF29 /* ViewController.m */,
+				094D751C1C05A05200B510F3 /* SmtaranAD */,
 				09CB43FD1B7194010069FF29 /* CardScanner */,
 				095865F61BFC123900FBAF7F /* PhotoBrowser */,
 				09FA27CB1BFD9D270073C77A /* UIViewControllerTransitioning */,
@@ -227,6 +287,12 @@
 		32B98DDF4C1D81C89D593970 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				094D75331C05A2C900B510F3 /* JavaScriptCore.framework */,
+				094D75311C05A2C400B510F3 /* SystemConfiguration.framework */,
+				094D752F1C05A2BC00B510F3 /* StoreKit.framework */,
+				094D752D1C05A2B100B510F3 /* AdSupport.framework */,
+				094D752B1C05A2AA00B510F3 /* CoreTelephony.framework */,
+				094D75291C05A2A500B510F3 /* CoreLocation.framework */,
 				095865F31BFC103B00FBAF7F /* libsqlite3.tbd */,
 				86CFE72790746F7A9ADB5FC0 /* libPods.a */,
 			);
@@ -384,11 +450,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094D75281C05A14800B510F3 /* SmtaranSplashAd.m in Sources */,
 				09FA27D81BFDB3270073C77A /* NavigationTransitionAnimation.m in Sources */,
 				09FA27E21BFDCB540073C77A /* XDSTransitioningTabBarController.m in Sources */,
 				09CB43DD1B7190D60069FF29 /* ViewController.m in Sources */,
 				095865FC1BFC128100FBAF7F /* XDSPhotoBrowserViewController.m in Sources */,
 				09FA27DF1BFDC9690073C77A /* TabbarTransitionAnimation.m in Sources */,
+				094D75371C05A39F00B510F3 /* SmtaranADViewController.m in Sources */,
 				09FA27D11BFD9E700073C77A /* XDSModelViewController.m in Sources */,
 				09CB44001B7194010069FF29 /* CardScannerViewController.m in Sources */,
 				09FA27DB1BFDB4990073C77A /* XDSTransitioningNavigationController.m in Sources */,
@@ -528,7 +596,10 @@
 				INFOPLIST_FILE = XDSPractice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XDSPractice/SmtaranAD/SmtaranSDK",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.onlinecredit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -546,7 +617,10 @@
 				INFOPLIST_FILE = XDSPractice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XDSPractice/SmtaranAD/SmtaranSDK",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.onlinecredit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

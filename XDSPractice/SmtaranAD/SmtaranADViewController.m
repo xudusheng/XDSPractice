@@ -7,31 +7,89 @@
 //
 
 #import "SmtaranADViewController.h"
+#import "SmtaranSDKManager.h"
+#import "SmtaranInterstitialAd.h"//插屏广告
 
-@interface SmtaranADViewController ()
+@interface SmtaranADViewController ()<SmtaranInterstitialAdDelegate>
+@property(nonatomic, strong) SmtaranInterstitialAd *interstitialWindow;
 
 @end
 
 @implementation SmtaranADViewController
 
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+//        [[SmtaranSDKManager getInstance]setPublisherID:MS_Test_PublishID withChannel:@"you_channel" auditFlag:MS_Test_Audit_Flag];
+        [[SmtaranSDKManager getInstance]setPublisherID:MS_Test_PublishID auditFlag:MS_Test_Audit_Flag];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self smtaranADViewControllerDataInit];
+//    [self createSmtaranADViewControllerUI];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self createSmtaranADViewControllerUI];
+}
+#pragma mark - UI相关
+- (void)createSmtaranADViewControllerUI{
+
+}
+
+
+#pragma mark - 代理方法
+#pragma mark SmtaranInterstitialAdDelegate
+-(void)smtaranInterstitialAdClick:(SmtaranInterstitialAd *)adInterstitial
+{
+    NSLog(@"smtaranInterstitialAdClick");
+}
+-(void)smtaranInterstitialAdClose:(SmtaranInterstitialAd *)adInterstitial
+{
+    NSLog(@"smtaranInterstitialAdClose");
+    self.interstitialWindow.delegate = self;
+    self.interstitialWindow = nil;
+}
+
+-(void)smtaranInterstitialAdSuccessToRequest:(SmtaranInterstitialAd *)adInterstitial
+{
+    NSLog(@"smtaranInterstitialAdSuccessToRequest");
+}
+
+
+-(void)smtaranInterstitialAdFaildToRequest:(SmtaranInterstitialAd *)adInterstitial withError:(NSError *)error
+{
+    NSLog(@"smtaranInterstitialAdFaildToRequest error =:%@",[error description]);
+}
+
+#pragma mark - 网络请求
+
+#pragma mark - 点击事件处理
+- (IBAction)createAD:(id)sender {
+    self.interstitialWindow = [[SmtaranInterstitialAd alloc]initInterstitialAdSize:SmtaranInterstitialAdSizeLarge delegate:self slotToken:MS_Test_SlotToken_Poster];
+    NSLog(@"===== %@", _interstitialWindow);
+}
+
+- (IBAction)showAD:(id)sender {
+    [self.interstitialWindow showInterstitialAd];
+}
+#pragma mark - 其他私有方法
+
+#pragma mark - 内存管理相关
+- (void)smtaranADViewControllerDataInit{
+    
+}
+- (void)dealloc {
+    self.interstitialWindow.delegate = nil;
+    self.interstitialWindow =  nil;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
