@@ -1,0 +1,4 @@
+pod 'CardIO', '~> 5.2.2'
+pod 'MHVideoPhotoGallery', '~> 2.1.3'
+
+

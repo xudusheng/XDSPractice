@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lho-9O-uk4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="peV-sH-sgA">
+            <objects>
+                <tableViewController id="fzw-cX-DAC" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ej0-kP-Zcx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="功能模块" id="zZJ-0S-TO3">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1sM-0V-phe">
+                                        <rect key="frame" x="0.0" y="114" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1sM-0V-phe" id="gs8-Ss-Id1">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行卡扫描(CardIO)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5e-ag-yko">
+                                                    <rect key="frame" x="15" y="11" width="150" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="z5e-ag-yko" firstAttribute="leading" secondItem="gs8-Ss-Id1" secondAttribute="leading" constant="15" id="Frs-3J-1p7"/>
+                                                <constraint firstAttribute="centerY" secondItem="z5e-ag-yko" secondAttribute="centerY" id="LZK-ds-FqA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="cQH-j0-2mJ" kind="show" id="yl0-ZQ-e7d"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="UI模块" id="qst-i5-Lfo">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="mx1-Ev-Gtf">
+                                        <rect key="frame" x="0.0" y="201" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mx1-Ev-Gtf" id="nm0-Zt-sdI">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片浏览器" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrH-CZ-xRv">
+                                                    <rect key="frame" x="15" y="11" width="85" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="WrH-CZ-xRv" secondAttribute="centerY" id="f1d-xn-6uN"/>
+                                                <constraint firstItem="WrH-CZ-xRv" firstAttribute="leading" secondItem="nm0-Zt-sdI" secondAttribute="leading" constant="15" id="yyb-4a-17X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="q6u-43-RGH" kind="show" id="g0X-98-Ul8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="X2A-hF-F1v">
+                                        <rect key="frame" x="0.0" y="245" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X2A-hF-F1v" id="e88-BI-rPc">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义下拉刷新" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z5-bn-aJO">
+                                                    <rect key="frame" x="15" y="11" width="119" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="2Z5-bn-aJO" firstAttribute="leading" secondItem="e88-BI-rPc" secondAttribute="leading" constant="15" id="7sR-0G-iz3"/>
+                                                <constraint firstAttribute="centerY" secondItem="2Z5-bn-aJO" secondAttribute="centerY" id="iza-iv-B2s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="rtL-UN-jxr" kind="push" id="j6P-it-8t4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="fzw-cX-DAC" id="T0b-iq-exA"/>
+                            <outlet property="delegate" destination="fzw-cX-DAC" id="Pcg-6o-rxj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="yNw-1b-ysv"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9P4-wa-Bji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="497"/>
+        </scene>
+        <!--Transitioning Navigation Controller-->
+        <scene sceneID="4L3-z3-8G9">
+            <objects>
+                <navigationController id="SpT-Mx-y7X" customClass="XDSTransitioningNavigationController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k6E-Mh-4mT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3IQ-yI-S5s" kind="relationship" relationship="rootViewController" id="j7H-CH-24t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMc-ze-ZGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662" y="1157"/>
+        </scene>
+        <!--媳妇儿-->
+        <scene sceneID="7sZ-Mb-yzJ">
+            <objects>
+                <viewController id="Gki-5c-I64" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BhP-Q4-iSg"/>
+                        <viewControllerLayoutGuide type="bottom" id="oWa-Uy-8cy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6VV-Xv-aqL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="媳妇儿" id="Q5Y-TA-vMX"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxw-ZX-aYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495" y="2411"/>
+        </scene>
+        <!--瑾宝-->
+        <scene sceneID="IJV-nN-j54">
+            <objects>
+                <viewController id="MUZ-Zf-9uv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f4A-rm-pjw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZAZ-b4-Jfl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FJj-iA-q1a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="瑾宝" id="lG7-4q-Iac"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qqc-F2-nx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495" y="1793"/>
+        </scene>
+        <!--Transitioning Tab Bar Controller-->
+        <scene sceneID="252-As-GnX">
+            <objects>
+                <tabBarController id="oxZ-OZ-7Yr" customClass="XDSTransitioningTabBarController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QNE-r1-3w3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MUZ-Zf-9uv" kind="relationship" relationship="viewControllers" id="tuv-IW-M8P"/>
+                        <segue destination="Gki-5c-I64" kind="relationship" relationship="viewControllers" id="hgA-rt-GbQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcs-yM-8yX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-945" y="2097"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U66-qD-44v">
+            <objects>
+                <viewController id="3IQ-yI-S5s" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rFG-e6-gEh"/>
+                        <viewControllerLayoutGuide type="bottom" id="8F7-mQ-5i9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yrY-JD-YSq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SXK-eI-PmE" appends="YES" id="oCb-Gw-7kN"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wc2-5P-MsO">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="NP5-xJ-SuY">
+                            <connections>
+                                <segue destination="19s-cc-tSs" kind="push" id="hGg-qf-OaG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0g-PU-DlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SXK-eI-PmE"/>
+            </objects>
+            <point key="canvasLocation" x="-245" y="1157"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tkv-hx-1Ec">
+            <objects>
+                <viewController id="19s-cc-tSs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YNM-nn-YLC"/>
+                        <viewControllerLayoutGuide type="bottom" id="GN4-KR-kZx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EZ3-tv-Ds2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v4b-dt-iw4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPE-wH-Fde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="1157"/>
+        </scene>
+        <!--银行卡扫描-->
+        <scene sceneID="KZb-Yk-DIr">
+            <objects>
+                <viewController id="cQH-j0-2mJ" customClass="CardScannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ap-0z-KP1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dpx-jP-AH8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ynE-05-NPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKy-kn-esE">
+                                <rect key="frame" x="108" y="120" width="105" height="30"/>
+                                <animations/>
+                                <state key="normal" title="点击扫描银行卡">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanButtonClick:" destination="cQH-j0-2mJ" eventType="touchUpInside" id="LTD-Ud-okB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9G-dm-aef">
+                                <rect key="frame" x="160" y="170" width="0.0" height="0.0"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="只能用于卡号突起的信用卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDn-Jp-Fys">
+                                <rect key="frame" x="58" y="497" width="204" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.7843137255" green="0.08235294118" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GKy-kn-esE" firstAttribute="top" secondItem="ynE-05-NPZ" secondAttribute="top" constant="120" id="Ph0-ta-HO3"/>
+                            <constraint firstAttribute="centerX" secondItem="jDn-Jp-Fys" secondAttribute="centerX" id="Riv-Q5-Knr"/>
+                            <constraint firstAttribute="centerX" secondItem="C9G-dm-aef" secondAttribute="centerX" id="TIm-CJ-1Mg"/>
+                            <constraint firstAttribute="centerX" secondItem="GKy-kn-esE" secondAttribute="centerX" id="awa-Y3-Vcp"/>
+                            <constraint firstItem="C9G-dm-aef" firstAttribute="top" secondItem="GKy-kn-esE" secondAttribute="bottom" constant="20" id="eJd-Wg-SQG"/>
+                            <constraint firstAttribute="bottom" secondItem="jDn-Jp-Fys" secondAttribute="bottom" constant="50" id="rpr-fT-mUC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="银行卡扫描" id="f7p-mU-orZ"/>
+                    <connections>
+                        <outlet property="cardInfoLabel" destination="C9G-dm-aef" id="XTY-8T-e3L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0L-bM-84k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="203"/>
+        </scene>
+        <!--自定义下拉刷新-->
+        <scene sceneID="jqR-cG-46K">
+            <objects>
+                <viewController id="rtL-UN-jxr" customClass="XDSRefreshViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3hf-e9-WhJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tb2-Yd-ZTL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3WK-Aj-A4D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="自定义下拉刷新" id="PvD-4x-blI"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yU-oJ-eOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1178"/>
+        </scene>
+        <!--图片浏览器-->
+        <scene sceneID="KNX-qn-QXc">
+            <objects>
+                <viewController id="q6u-43-RGH" customClass="XDSPhotoBrowserViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MMR-RY-i1s"/>
+                        <viewControllerLayoutGuide type="bottom" id="vaN-TO-Xi2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h2d-wy-Sz0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="图片浏览器" id="6HY-ak-jaf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Paa-QU-dM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="839"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ukl-oe-qzX">
+            <objects>
+                <navigationController id="Lho-9O-uk4" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L3U-Ay-Ezb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fzw-cX-DAC" kind="relationship" relationship="rootViewController" id="N66-Fs-xrv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SeR-Cv-PzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="509"/>
+        </scene>
+    </scenes>
+</document>
