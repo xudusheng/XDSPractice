@@ -117,14 +117,16 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 - (void)prepareForBodyWithSize:(UInt64)contentLength
 {
 	HTTPLogTrace();
-	
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:kGetContentLengthNotificationName object:@(contentLength) userInfo:@{kGetContentLengthNotificationName:@(contentLength)}];
+
 	// set up mime parser
     NSString* boundary = [request headerField:@"boundary"];
     parser = [[MultipartFormDataParser alloc] initWithBoundary:boundary formEncoding:NSUTF8StringEncoding];
     parser.delegate = self;
 	uploadedFiles = [[NSMutableArray alloc] init];
     
-    NSLog(@"prepareForBodyWithSize = %zd", contentLength);
+//    NSLog(@"prepareForBodyWithSize = %zd", contentLength);
 }
 
 #pragma mark - 00003（每次下载的文件大小）
@@ -134,7 +136,9 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
     // append data to the parser. It will invoke callbacks to let us handle
     // parsed data.
     [parser appendData:postDataChunk];
-    NSLog(@"processBodyData = %zd",postDataChunk.length);
+//    NSLog(@"processBodyData = %zd",postDataChunk.length);
+//    [[NSNotificationCenter defaultCenter] postNotificationName:kDownloadProcessBodyDataNotificationName object:postDataChunk];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kDownloadProcessBodyDataNotificationName object:postDataChunk userInfo:@{kDownloadProcessBodyDataNotificationName:postDataChunk}];
 }
 
 
@@ -148,7 +152,6 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 
     MultipartMessageHeaderField* disposition = [header.fields objectForKey:@"Content-Disposition"];
 	NSString* filename = [[disposition.params objectForKey:@"filename"] lastPathComponent];
-
     if ( (nil == filename) || [filename isEqualToString: @""] ) {
         // it's either not a file part, or
 		// an empty form sent. we won't handle it.
@@ -183,7 +186,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 #pragma mark - 00005（每次上传的文件大小）
 - (void) processContent:(NSData*) data WithHeader:(MultipartMessageHeader*) header 
 {
-    NSLog(@"processContent:WithHeader: = %zd = %@", data.length, header.fields);
+//    NSLog(@"processContent:WithHeader: = %zd = %@", data.length, header.fields);
 	// here we just write the output from parser to the file.
 	if( storeFile ) {
 		[storeFile writeData:data];
@@ -193,7 +196,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 #pragma mark - 00006
 - (void) processEndOfPartWithHeader:(MultipartMessageHeader*) header
 {
-    NSLog(@"processEndOfPartWithHeader = %@", header.fields);
+//    NSLog(@"processEndOfPartWithHeader = %@", header.fields);
 	// as the file part is over, we close the file.
 	[storeFile closeFile];
 	storeFile = nil;

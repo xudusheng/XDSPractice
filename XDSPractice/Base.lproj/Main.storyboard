@@ -840,33 +840,46 @@
                         <viewControllerLayoutGuide type="bottom" id="reu-lP-cn1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ocl-KB-S6e">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibL-PH-3Aj">
-                                <rect key="frame" x="0.0" y="84" width="320" height="47"/>
+                                <rect key="frame" x="0.0" y="84" width="320" height="54"/>
                                 <animations/>
                                 <string key="text">请确保电脑和手机在同一个局域网
 传输过程中不能关闭本窗口
 在电脑浏览器中输入以下网址</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="192.168.2.2:9999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyh-br-u5V">
-                                <rect key="frame" x="104" y="141" width="114" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="192.168.2.2:9999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyh-br-u5V">
+                                <rect key="frame" x="100" y="148" width="121" height="18"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.91764705879999997" green="0.2470588235" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-jV-T2y">
-                                <rect key="frame" x="40" y="188" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi.png" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-jV-T2y">
+                                <rect key="frame" x="35" y="181" width="250" height="167"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="hd3-jV-T2y" secondAttribute="height" multiplier="15:8" id="S2G-fd-60V"/>
+                                    <constraint firstAttribute="width" secondItem="hd3-jV-T2y" secondAttribute="height" multiplier="3:2" id="kRf-bb-5aE"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等待上传…" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjk-cu-IW8">
+                                <rect key="frame" x="35" y="368" width="251" height="18"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2gE-w6-R7C">
+                                <rect key="frame" x="35" y="396" width="251" height="2"/>
+                                <animations/>
+                                <color key="progressTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -874,15 +887,26 @@
                             <constraint firstItem="ibL-PH-3Aj" firstAttribute="leading" secondItem="ocl-KB-S6e" secondAttribute="leading" id="0nK-5w-IDs"/>
                             <constraint firstItem="Cyh-br-u5V" firstAttribute="centerX" secondItem="ibL-PH-3Aj" secondAttribute="centerX" id="EUB-jO-0N8"/>
                             <constraint firstItem="Cyh-br-u5V" firstAttribute="top" secondItem="ibL-PH-3Aj" secondAttribute="bottom" constant="10" id="Gay-R4-86p"/>
-                            <constraint firstItem="hd3-jV-T2y" firstAttribute="top" secondItem="Cyh-br-u5V" secondAttribute="bottom" constant="30" id="HmL-JX-FY4"/>
+                            <constraint firstItem="hd3-jV-T2y" firstAttribute="top" secondItem="Cyh-br-u5V" secondAttribute="bottom" constant="15" id="HmL-JX-FY4"/>
+                            <constraint firstItem="Jjk-cu-IW8" firstAttribute="centerX" secondItem="hd3-jV-T2y" secondAttribute="centerX" id="JkU-jy-jyV"/>
                             <constraint firstItem="ibL-PH-3Aj" firstAttribute="top" secondItem="17M-KT-V0K" secondAttribute="bottom" constant="20" id="P8p-Dq-6CX"/>
                             <constraint firstAttribute="trailing" secondItem="ibL-PH-3Aj" secondAttribute="trailing" id="S5h-UW-Wvi"/>
-                            <constraint firstItem="hd3-jV-T2y" firstAttribute="leading" secondItem="ocl-KB-S6e" secondAttribute="leading" constant="40" id="Xxq-UC-ZUd"/>
+                            <constraint firstItem="hd3-jV-T2y" firstAttribute="leading" secondItem="ocl-KB-S6e" secondAttribute="leading" constant="35" id="Xxq-UC-ZUd"/>
+                            <constraint firstItem="2gE-w6-R7C" firstAttribute="top" secondItem="Jjk-cu-IW8" secondAttribute="bottom" constant="10" id="a5U-Df-hY0"/>
                             <constraint firstItem="hd3-jV-T2y" firstAttribute="centerX" secondItem="Cyh-br-u5V" secondAttribute="centerX" id="akR-Ol-g2l"/>
+                            <constraint firstItem="Jjk-cu-IW8" firstAttribute="top" secondItem="hd3-jV-T2y" secondAttribute="bottom" constant="20" id="ePL-Vb-Ksh"/>
+                            <constraint firstItem="Jjk-cu-IW8" firstAttribute="leading" secondItem="hd3-jV-T2y" secondAttribute="leading" id="n4m-zs-idj"/>
+                            <constraint firstItem="Jjk-cu-IW8" firstAttribute="trailing" secondItem="2gE-w6-R7C" secondAttribute="trailing" id="tbK-fu-Rml"/>
+                            <constraint firstItem="2gE-w6-R7C" firstAttribute="leading" secondItem="Jjk-cu-IW8" secondAttribute="leading" id="yx2-aJ-L5J"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="WiFi文件传输" id="co6-Pr-NPH"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="IPAndPortLabel" destination="Cyh-br-u5V" id="DdL-xF-8xk"/>
+                        <outlet property="uploadProgressLabel" destination="Jjk-cu-IW8" id="UlF-5t-yLA"/>
+                        <outlet property="uploadProgressView" destination="2gE-w6-R7C" id="Yn1-e0-yOC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aB1-0Q-IcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -928,4 +952,7 @@
             <point key="canvasLocation" x="155" y="509"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wifi.png" width="480" height="360"/>
+    </resources>
 </document>

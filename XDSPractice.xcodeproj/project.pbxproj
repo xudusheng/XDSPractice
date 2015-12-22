@@ -53,6 +53,7 @@
 		096C9BB61C27E4B900F06B5B /* upload.html in Resources */ = {isa = PBXBuildFile; fileRef = 096C9B971C27E4B900F06B5B /* upload.html */; };
 		09AC52021C0D80B3003FA23C /* CALayer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC52011C0D80B3003FA23C /* CALayer+Addition.m */; };
 		09AC52051C0D85B2003FA23C /* OCPersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC52041C0D85B2003FA23C /* OCPersonalCenterViewController.m */; };
+		09AFAC141C28EF0000FD6D5A /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AFAC131C28EF0000FD6D5A /* wifi.png */; };
 		09CB43D71B7190D60069FF29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB43D61B7190D60069FF29 /* main.m */; };
 		09CB43DA1B7190D60069FF29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB43D91B7190D60069FF29 /* AppDelegate.m */; };
 		09CB43DD1B7190D60069FF29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB43DC1B7190D60069FF29 /* ViewController.m */; };
@@ -169,6 +170,7 @@
 		09AC52011C0D80B3003FA23C /* CALayer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Addition.m"; sourceTree = "<group>"; };
 		09AC52031C0D85B2003FA23C /* OCPersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPersonalCenterViewController.h; sourceTree = "<group>"; };
 		09AC52041C0D85B2003FA23C /* OCPersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPersonalCenterViewController.m; sourceTree = "<group>"; };
+		09AFAC131C28EF0000FD6D5A /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi.png; sourceTree = "<group>"; };
 		09CB43D11B7190D60069FF29 /* XDSPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDSPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CB43D51B7190D60069FF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09CB43D61B7190D60069FF29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				096C9AEB1C27CE8400F06B5B /* XDSWIFIFileTransferViewController.m */,
 				096C9B511C27E3C000F06B5B /* XDSIPHelper.h */,
 				096C9B521C27E3C000F06B5B /* XDSIPHelper.m */,
+				09AFAC131C28EF0000FD6D5A /* wifi.png */,
 			);
 			path = WiFiFileTransfer;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 			files = (
 				096C9B981C27E4B900F06B5B /* About.txt in Resources */,
 				096C9BA21C27E4B900F06B5B /* README.txt in Resources */,
+				09AFAC141C28EF0000FD6D5A /* wifi.png in Resources */,
 				09CB43E01B7190D60069FF29 /* Main.storyboard in Resources */,
 				096C9BB61C27E4B900F06B5B /* upload.html in Resources */,
 				096C9B9A1C27E4B900F06B5B /* About.txt in Resources */,
