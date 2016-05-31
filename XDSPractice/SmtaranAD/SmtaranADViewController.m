@@ -21,7 +21,7 @@
     self = [super init];
     if (self) {
 //        [[SmtaranSDKManager getInstance]setPublisherID:MS_Test_PublishID withChannel:@"you_channel" auditFlag:MS_Test_Audit_Flag];
-        [[SmtaranSDKManager getInstance]setPublisherID:MS_Test_PublishID auditFlag:MS_Test_Audit_Flag];
+//        [[SmtaranSDKManager getInstance]setPublisherID:MS_Test_PublishID auditFlag:MS_Test_Audit_Flag];
     }
     return self;
 }

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SmtaranSDKManager.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"++++++%f = %ld", [UIScreen mainScreen].scale, (long)UI_USER_INTERFACE_IDIOM());
+    [[SmtaranSDKManager getInstance]setPublisherID:MS_Test_PublishID withChannel:@"you_channel" auditFlag:MS_Test_Audit_Flag];
+
     return YES;
 }
 

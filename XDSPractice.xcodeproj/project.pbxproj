@@ -51,6 +51,9 @@
 		096C9BB41C27E4B900F06B5B /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 096C9B941C27E4B900F06B5B /* MyHTTPConnection.m */; };
 		096C9BB51C27E4B900F06B5B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 096C9B961C27E4B900F06B5B /* index.html */; };
 		096C9BB61C27E4B900F06B5B /* upload.html in Resources */ = {isa = PBXBuildFile; fileRef = 096C9B971C27E4B900F06B5B /* upload.html */; };
+		097DACD01C5F519A00AF3F2E /* UIView_xdsRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 097DACCB1C5F519A00AF3F2E /* UIView_xdsRoundView.m */; };
+		097DACD11C5F519A00AF3F2E /* UIButton_xdsRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 097DACCD1C5F519A00AF3F2E /* UIButton_xdsRoundButton.m */; };
+		097DACD21C5F519A00AF3F2E /* UIImageView_xdsImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 097DACCF1C5F519A00AF3F2E /* UIImageView_xdsImageView.m */; };
 		09AC52021C0D80B3003FA23C /* CALayer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC52011C0D80B3003FA23C /* CALayer+Addition.m */; };
 		09AC52051C0D85B2003FA23C /* OCPersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC52041C0D85B2003FA23C /* OCPersonalCenterViewController.m */; };
 		09AFAC141C28EF0000FD6D5A /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AFAC131C28EF0000FD6D5A /* wifi.png */; };
@@ -166,6 +169,12 @@
 		096C9B941C27E4B900F06B5B /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHTTPConnection.m; sourceTree = "<group>"; };
 		096C9B961C27E4B900F06B5B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		096C9B971C27E4B900F06B5B /* upload.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = upload.html; sourceTree = "<group>"; };
+		097DACCA1C5F519A00AF3F2E /* UIView_xdsRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_xdsRoundView.h; sourceTree = "<group>"; };
+		097DACCB1C5F519A00AF3F2E /* UIView_xdsRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_xdsRoundView.m; sourceTree = "<group>"; };
+		097DACCC1C5F519A00AF3F2E /* UIButton_xdsRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButton_xdsRoundButton.h; sourceTree = "<group>"; };
+		097DACCD1C5F519A00AF3F2E /* UIButton_xdsRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButton_xdsRoundButton.m; sourceTree = "<group>"; };
+		097DACCE1C5F519A00AF3F2E /* UIImageView_xdsImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageView_xdsImageView.h; sourceTree = "<group>"; };
+		097DACCF1C5F519A00AF3F2E /* UIImageView_xdsImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageView_xdsImageView.m; sourceTree = "<group>"; };
 		09AC52001C0D80B3003FA23C /* CALayer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Addition.h"; sourceTree = "<group>"; };
 		09AC52011C0D80B3003FA23C /* CALayer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Addition.m"; sourceTree = "<group>"; };
 		09AC52031C0D85B2003FA23C /* OCPersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPersonalCenterViewController.h; sourceTree = "<group>"; };
@@ -417,6 +426,19 @@
 			path = web;
 			sourceTree = "<group>";
 		};
+		097DAC5E1C5F0FB100AF3F2E /* 开启storyboard实时渲染功能 */ = {
+			isa = PBXGroup;
+			children = (
+				097DACCA1C5F519A00AF3F2E /* UIView_xdsRoundView.h */,
+				097DACCB1C5F519A00AF3F2E /* UIView_xdsRoundView.m */,
+				097DACCC1C5F519A00AF3F2E /* UIButton_xdsRoundButton.h */,
+				097DACCD1C5F519A00AF3F2E /* UIButton_xdsRoundButton.m */,
+				097DACCE1C5F519A00AF3F2E /* UIImageView_xdsImageView.h */,
+				097DACCF1C5F519A00AF3F2E /* UIImageView_xdsImageView.m */,
+			);
+			path = "开启storyboard实时渲染功能";
+			sourceTree = "<group>";
+		};
 		09CB43C81B7190D60069FF29 = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +476,7 @@
 				09FA27CB1BFD9D270073C77A /* UIViewControllerTransitioning */,
 				09FA27D51BFDB2F00073C77A /* UINavigationControllerTransitioning */,
 				09FA27DC1BFDC6B10073C77A /* UITabBarControllerTransitioning */,
+				097DAC5E1C5F0FB100AF3F2E /* 开启storyboard实时渲染功能 */,
 				09CB43E11B7190D60069FF29 /* Images.xcassets */,
 				09CB43E31B7190D60069FF29 /* LaunchScreen.xib */,
 				09AC52001C0D80B3003FA23C /* CALayer+Addition.h */,
@@ -623,7 +646,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 09CB43C81B7190D60069FF29;
@@ -747,7 +769,9 @@
 				096C9B9B1C27E4B900F06B5B /* DDAbstractDatabaseLogger.m in Sources */,
 				096C9AEC1C27CE8400F06B5B /* XDSWIFIFileTransferViewController.m in Sources */,
 				096C9BA91C27E4B900F06B5B /* HTTPServer.m in Sources */,
+				097DACD21C5F519A00AF3F2E /* UIImageView_xdsImageView.m in Sources */,
 				096C9BAB1C27E4B900F06B5B /* MultipartMessageHeader.m in Sources */,
+				097DACD11C5F519A00AF3F2E /* UIButton_xdsRoundButton.m in Sources */,
 				09CB44001B7194010069FF29 /* CardScannerViewController.m in Sources */,
 				09FA27DB1BFDB4990073C77A /* XDSTransitioningNavigationController.m in Sources */,
 				09AC52021C0D80B3003FA23C /* CALayer+Addition.m in Sources */,
@@ -759,6 +783,7 @@
 				09FA27D41BFDA0510073C77A /* ModalTransitionAnimation.m in Sources */,
 				096C9B531C27E3C000F06B5B /* XDSIPHelper.m in Sources */,
 				09CB43DA1B7190D60069FF29 /* AppDelegate.m in Sources */,
+				097DACD01C5F519A00AF3F2E /* UIView_xdsRoundView.m in Sources */,
 				09CB43D71B7190D60069FF29 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

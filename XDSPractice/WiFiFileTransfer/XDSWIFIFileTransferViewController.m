@@ -61,7 +61,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         // something
         _uploadProgressView.progress = (double)_downloadLength/_contentLength;
-        _uploadProgressLabel.text = [NSString stringWithFormat:@"正在上传第%zd个文件，进度%zd%%\n你可在“导入图书”文件夹中找到它们。", _fileCount, (NSInteger)(_uploadProgressView.progress * 100)];
+        _uploadProgressLabel.text = [NSString stringWithFormat:NSLocalizedString(@"XDSWIFIFileTransferUploadingText", nil) , _fileCount, (NSInteger)(_uploadProgressView.progress * 100)];
     });
 }
 #pragma mark - UI相关
