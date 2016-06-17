@@ -12,4 +12,5 @@
 @property (assign, nonatomic) IBInspectable CGFloat xdsCornerRadio;
 @property (assign, nonatomic) IBInspectable CGFloat xdsBorderWidth;
 @property (strong, nonatomic) IBInspectable UIColor * xdsBorderColor;
+
 @end

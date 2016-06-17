@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09177DF91D13D959007E605F /* XDSCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09177DF81D13D959007E605F /* XDSCameraViewController.m */; };
+		09177DFC1D13DD7C007E605F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09177DFA1D13DD7C007E605F /* Main.storyboard */; };
+		09177E501D13EBF5007E605F /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 09177E4F1D13EBF5007E605F /* tessdata */; };
+		092399CD1CFE7A15002706B2 /* XDSHotfixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092399CC1CFE7A15002706B2 /* XDSHotfixViewController.m */; };
+		092399D41CFED52C002706B2 /* XDSWebViewBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092399D31CFED52C002706B2 /* XDSWebViewBridgeController.m */; };
 		094D75271C05A14800B510F3 /* libSmtaranSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D751F1C05A14800B510F3 /* libSmtaranSDK.a */; };
 		094D75281C05A14800B510F3 /* SmtaranSplashAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 094D75261C05A14800B510F3 /* SmtaranSplashAd.m */; };
 		094D752A1C05A2A500B510F3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094D75291C05A2A500B510F3 /* CoreLocation.framework */; };
@@ -55,12 +60,12 @@
 		097DACD11C5F519A00AF3F2E /* UIButton_xdsRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 097DACCD1C5F519A00AF3F2E /* UIButton_xdsRoundButton.m */; };
 		097DACD21C5F519A00AF3F2E /* UIImageView_xdsImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 097DACCF1C5F519A00AF3F2E /* UIImageView_xdsImageView.m */; };
 		09AC52021C0D80B3003FA23C /* CALayer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC52011C0D80B3003FA23C /* CALayer+Addition.m */; };
-		09AC52051C0D85B2003FA23C /* OCPersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC52041C0D85B2003FA23C /* OCPersonalCenterViewController.m */; };
 		09AFAC141C28EF0000FD6D5A /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 09AFAC131C28EF0000FD6D5A /* wifi.png */; };
+		09BDDB411CFD932000C210FB /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BDDB401CFD932000C210FB /* JSPatch.framework */; };
+		09BDDB431CFD934700C210FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BDDB421CFD934700C210FB /* libz.tbd */; };
 		09CB43D71B7190D60069FF29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB43D61B7190D60069FF29 /* main.m */; };
 		09CB43DA1B7190D60069FF29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB43D91B7190D60069FF29 /* AppDelegate.m */; };
 		09CB43DD1B7190D60069FF29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB43DC1B7190D60069FF29 /* ViewController.m */; };
-		09CB43E01B7190D60069FF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CB43DE1B7190D60069FF29 /* Main.storyboard */; };
 		09CB43E21B7190D60069FF29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09CB43E11B7190D60069FF29 /* Images.xcassets */; };
 		09CB43E51B7190D60069FF29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CB43E31B7190D60069FF29 /* LaunchScreen.xib */; };
 		09CB43F11B7190D60069FF29 /* XDSPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB43F01B7190D60069FF29 /* XDSPracticeTests.m */; };
@@ -86,6 +91,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09177DF71D13D959007E605F /* XDSCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSCameraViewController.h; sourceTree = "<group>"; };
+		09177DF81D13D959007E605F /* XDSCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSCameraViewController.m; sourceTree = "<group>"; };
+		09177DFB1D13DD7C007E605F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09177E4F1D13EBF5007E605F /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		092399CB1CFE7A15002706B2 /* XDSHotfixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSHotfixViewController.h; sourceTree = "<group>"; };
+		092399CC1CFE7A15002706B2 /* XDSHotfixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSHotfixViewController.m; sourceTree = "<group>"; };
+		092399D21CFED52C002706B2 /* XDSWebViewBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSWebViewBridgeController.h; sourceTree = "<group>"; };
+		092399D31CFED52C002706B2 /* XDSWebViewBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSWebViewBridgeController.m; sourceTree = "<group>"; };
+		092399D51CFED961002706B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		094D751E1C05A14800B510F3 /* FWBaseDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWBaseDownload.h; sourceTree = "<group>"; };
 		094D751F1C05A14800B510F3 /* libSmtaranSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmtaranSDK.a; sourceTree = "<group>"; };
 		094D75201C05A14800B510F3 /* SmtaranBannerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmtaranBannerAd.h; sourceTree = "<group>"; };
@@ -177,9 +191,9 @@
 		097DACCF1C5F519A00AF3F2E /* UIImageView_xdsImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageView_xdsImageView.m; sourceTree = "<group>"; };
 		09AC52001C0D80B3003FA23C /* CALayer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Addition.h"; sourceTree = "<group>"; };
 		09AC52011C0D80B3003FA23C /* CALayer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Addition.m"; sourceTree = "<group>"; };
-		09AC52031C0D85B2003FA23C /* OCPersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPersonalCenterViewController.h; sourceTree = "<group>"; };
-		09AC52041C0D85B2003FA23C /* OCPersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPersonalCenterViewController.m; sourceTree = "<group>"; };
 		09AFAC131C28EF0000FD6D5A /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi.png; sourceTree = "<group>"; };
+		09BDDB401CFD932000C210FB /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
+		09BDDB421CFD934700C210FB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		09CB43D11B7190D60069FF29 /* XDSPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDSPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CB43D51B7190D60069FF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09CB43D61B7190D60069FF29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -187,7 +201,6 @@
 		09CB43D91B7190D60069FF29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		09CB43DB1B7190D60069FF29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		09CB43DC1B7190D60069FF29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		09CB43DF1B7190D60069FF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09CB43E11B7190D60069FF29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		09CB43E41B7190D60069FF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		09CB43EA1B7190D60069FF29 /* XDSPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XDSPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +232,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BDDB431CFD934700C210FB /* libz.tbd in Frameworks */,
+				09BDDB411CFD932000C210FB /* JSPatch.framework in Frameworks */,
 				094D75341C05A2C900B510F3 /* JavaScriptCore.framework in Frameworks */,
 				094D75321C05A2C400B510F3 /* SystemConfiguration.framework in Frameworks */,
 				094D75301C05A2BC00B510F3 /* StoreKit.framework in Frameworks */,
@@ -241,6 +256,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09177DF61D13CDC6007E605F /* 文字识别TesseractOCR */ = {
+			isa = PBXGroup;
+			children = (
+				09177DF71D13D959007E605F /* XDSCameraViewController.h */,
+				09177DF81D13D959007E605F /* XDSCameraViewController.m */,
+			);
+			path = "文字识别TesseractOCR";
+			sourceTree = "<group>";
+		};
+		09177DFD1D13E17B007E605F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				09177E4F1D13EBF5007E605F /* tessdata */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		092399CA1CFE7810002706B2 /* 热修复 */ = {
+			isa = PBXGroup;
+			children = (
+				092399CB1CFE7A15002706B2 /* XDSHotfixViewController.h */,
+				092399CC1CFE7A15002706B2 /* XDSHotfixViewController.m */,
+				092399D21CFED52C002706B2 /* XDSWebViewBridgeController.h */,
+				092399D31CFED52C002706B2 /* XDSWebViewBridgeController.m */,
+			);
+			name = "热修复";
+			path = "开启storyboard实时渲染功能/热修复";
+			sourceTree = "<group>";
+		};
 		094D751C1C05A05200B510F3 /* SmtaranAD */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,13 +506,12 @@
 		09CB43D31B7190D60069FF29 /* XDSPractice */ = {
 			isa = PBXGroup;
 			children = (
-				09CB43DE1B7190D60069FF29 /* Main.storyboard */,
+				09177DFA1D13DD7C007E605F /* Main.storyboard */,
 				09CB43D81B7190D60069FF29 /* AppDelegate.h */,
 				09CB43D91B7190D60069FF29 /* AppDelegate.m */,
 				09CB43DB1B7190D60069FF29 /* ViewController.h */,
 				09CB43DC1B7190D60069FF29 /* ViewController.m */,
-				09AC52031C0D85B2003FA23C /* OCPersonalCenterViewController.h */,
-				09AC52041C0D85B2003FA23C /* OCPersonalCenterViewController.m */,
+				09177DFD1D13E17B007E605F /* Resource */,
 				09CB43FD1B7194010069FF29 /* CardScanner */,
 				094D751C1C05A05200B510F3 /* SmtaranAD */,
 				095865F61BFC123900FBAF7F /* PhotoBrowser */,
@@ -477,6 +520,8 @@
 				09FA27D51BFDB2F00073C77A /* UINavigationControllerTransitioning */,
 				09FA27DC1BFDC6B10073C77A /* UITabBarControllerTransitioning */,
 				097DAC5E1C5F0FB100AF3F2E /* 开启storyboard实时渲染功能 */,
+				092399CA1CFE7810002706B2 /* 热修复 */,
+				09177DF61D13CDC6007E605F /* 文字识别TesseractOCR */,
 				09CB43E11B7190D60069FF29 /* Images.xcassets */,
 				09CB43E31B7190D60069FF29 /* LaunchScreen.xib */,
 				09AC52001C0D80B3003FA23C /* CALayer+Addition.h */,
@@ -570,6 +615,8 @@
 		32B98DDF4C1D81C89D593970 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				092399D51CFED961002706B2 /* AVFoundation.framework */,
+				09BDDB401CFD932000C210FB /* JSPatch.framework */,
 				094D75331C05A2C900B510F3 /* JavaScriptCore.framework */,
 				094D75311C05A2C400B510F3 /* SystemConfiguration.framework */,
 				094D752F1C05A2BC00B510F3 /* StoreKit.framework */,
@@ -578,6 +625,7 @@
 				094D75291C05A2A500B510F3 /* CoreLocation.framework */,
 				095865F31BFC103B00FBAF7F /* libsqlite3.tbd */,
 				86CFE72790746F7A9ADB5FC0 /* libPods.a */,
+				09BDDB421CFD934700C210FB /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -667,10 +715,11 @@
 				096C9B981C27E4B900F06B5B /* About.txt in Resources */,
 				096C9BA21C27E4B900F06B5B /* README.txt in Resources */,
 				09AFAC141C28EF0000FD6D5A /* wifi.png in Resources */,
-				09CB43E01B7190D60069FF29 /* Main.storyboard in Resources */,
 				096C9BB61C27E4B900F06B5B /* upload.html in Resources */,
 				096C9B9A1C27E4B900F06B5B /* About.txt in Resources */,
 				09CB43E51B7190D60069FF29 /* LaunchScreen.xib in Resources */,
+				09177DFC1D13DD7C007E605F /* Main.storyboard in Resources */,
+				09177E501D13EBF5007E605F /* tessdata in Resources */,
 				09CB43E21B7190D60069FF29 /* Images.xcassets in Resources */,
 				096C9BB51C27E4B900F06B5B /* index.html in Resources */,
 			);
@@ -746,7 +795,6 @@
 				09FA27D81BFDB3270073C77A /* NavigationTransitionAnimation.m in Sources */,
 				096C9B9C1C27E4B900F06B5B /* DDASLLogger.m in Sources */,
 				096C9BB31C27E4B900F06B5B /* WebSocket.m in Sources */,
-				09AC52051C0D85B2003FA23C /* OCPersonalCenterViewController.m in Sources */,
 				096C9BAA1C27E4B900F06B5B /* MultipartFormDataParser.m in Sources */,
 				096C9B991C27E4B900F06B5B /* GCDAsyncSocket.m in Sources */,
 				096C9BA71C27E4B900F06B5B /* HTTPConnection.m in Sources */,
@@ -758,6 +806,7 @@
 				09CB43DD1B7190D60069FF29 /* ViewController.m in Sources */,
 				096C9BB21C27E4B900F06B5B /* HTTPRedirectResponse.m in Sources */,
 				095865FC1BFC128100FBAF7F /* XDSPhotoBrowserViewController.m in Sources */,
+				092399CD1CFE7A15002706B2 /* XDSHotfixViewController.m in Sources */,
 				096C9BA11C27E4B900F06B5B /* DispatchQueueLogFormatter.m in Sources */,
 				096C9BA31C27E4B900F06B5B /* DDData.m in Sources */,
 				096C9BA51C27E4B900F06B5B /* DDRange.m in Sources */,
@@ -785,6 +834,8 @@
 				09CB43DA1B7190D60069FF29 /* AppDelegate.m in Sources */,
 				097DACD01C5F519A00AF3F2E /* UIView_xdsRoundView.m in Sources */,
 				09CB43D71B7190D60069FF29 /* main.m in Sources */,
+				092399D41CFED52C002706B2 /* XDSWebViewBridgeController.m in Sources */,
+				09177DF91D13D959007E605F /* XDSCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,10 +858,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		09CB43DE1B7190D60069FF29 /* Main.storyboard */ = {
+		09177DFA1D13DD7C007E605F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				09CB43DF1B7190D60069FF29 /* Base */,
+				09177DFB1D13DD7C007E605F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -913,9 +964,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: mu he (FX98SJ5KRZ)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = XDSPractice/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -934,9 +990,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: mu he (FX98SJ5KRZ)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = XDSPractice/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

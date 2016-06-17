@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "SmtaranSDKManager.h"
-
+#import "SmtaranSDKManager.h"//广告
+#import <JSPatch/JSPatch.h>
 @interface AppDelegate ()
 
 @end
@@ -18,9 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"++++++%f = %ld", [UIScreen mainScreen].scale, (long)UI_USER_INTERFACE_IDIOM());
-    [[SmtaranSDKManager getInstance]setPublisherID:MS_Test_PublishID withChannel:@"you_channel" auditFlag:MS_Test_Audit_Flag];
-
+//    NSLog(@"++++++%f = %ld", [UIScreen mainScreen].scale, (long)UI_USER_INTERFACE_IDIOM());
+//    [[SmtaranSDKManager getInstance]setPublisherID:MS_Test_PublishID withChannel:@"you_channel" auditFlag:MS_Test_Audit_Flag];
+//
+//    //JSPatch热修复
+//    [JSPatch startWithAppKey:@"bbe62a3f7a35faf9"];
+//    [JSPatch sync];
+//    [JSPatch testScriptInBundle];
+    
     return YES;
 }
 
