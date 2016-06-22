@@ -37,7 +37,6 @@
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveANewFileNotification:) name:kGetContentLengthNotificationName object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveDownloadProcessBodyDataNotification:) name:kDownloadProcessBodyDataNotificationName object:nil];
-    
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -107,5 +106,9 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:kGetContentLengthNotificationName object:nil];
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:kDownloadProcessBodyDataNotificationName object:nil];
+}
 
 @end

@@ -4,14 +4,72 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SimpleTimer_TodayExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Today.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TodayExtansion.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>TodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>XDSPractice.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>xxx.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>09392C231D18CAF300D3D690</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09392C391D18CE3400D3D690</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09AD536E1D1A20CC0083994E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09AD53851D1A64500083994E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09AD53991D1A655B0083994E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>09CB43D01B7190D60069FF29</key>
 		<dict>
 			<key>primary</key>
