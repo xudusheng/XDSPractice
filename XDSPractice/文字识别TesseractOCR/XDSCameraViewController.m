@@ -32,8 +32,8 @@
 - (void)setupTesseract{
     [self.session startRunning];
     // Create a queue to perform recognition operations
-    self.recognitionOp = [[G8RecognitionOperation alloc] initWithLanguage:@"eng"];
-    _recognitionOp.tesseract.engineMode = G8OCREngineModeTesseractCubeCombined;
+    self.recognitionOp = [[G8RecognitionOperation alloc] initWithLanguage:@"chi_sim+eng"];
+    _recognitionOp.tesseract.engineMode = G8OCREngineModeTesseractOnly;
     _recognitionOp.tesseract.pageSegmentationMode = G8PageSegmentationModeAuto;
     _recognitionOp.tesseract.maximumRecognitionTime = 60.0;
 }
